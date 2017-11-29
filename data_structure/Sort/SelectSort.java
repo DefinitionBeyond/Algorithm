@@ -1,4 +1,4 @@
-package data_structure.Linklist.Sort;
+package data_structure.Sort;
 
 public class SelectSort {
     public static void main(String[] args) {
