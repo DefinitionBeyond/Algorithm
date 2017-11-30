@@ -1,9 +1,9 @@
 package data_structure.Sort;
 
-public class qiukSort {
+public class quickSort {
     public static void main(String []args){
         int[] a = {6, 5, 3, 1, 8, 7, 2, 4};
-       qiukSort q = new qiukSort();
+        quickSort q = new quickSort();
         q.Qsort(a,0,a.length-1);
         q.print(a);
     }
