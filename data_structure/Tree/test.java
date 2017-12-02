@@ -36,4 +36,13 @@ public class test {
         System.out.println();
         new scanTreeByPostOrder().BinaryTreePostOrder_loop(rootNode);
     }
+
+    @Test
+    public void test3() {
+        Integer[] a = {39, 21, 69, 6, 78, 21, 83, 53, 69, 52, 85};
+        CreateTree tree = new CreateTree(a);
+        tree.createTree();
+        TreeNode<Integer> rootNode = tree.listnode.get(0);
+        new scanTreeBylevelOrder().BinaryTreeLevelOrder(rootNode);
+    }
 }
