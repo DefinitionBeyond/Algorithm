@@ -1,5 +1,9 @@
 package data_structure.Sort;
 
+/**
+ * @author liutao
+ * @date 2018/3/28  15:42
+ */
 public class BubbleSort {
     public static void main(String[] args) {
         int[] a = {6,5,3,1,8,7,2,4};
@@ -7,10 +11,11 @@ public class BubbleSort {
         ans.print(ans.Sorted(a));
         ans.print(ans.SortedFast1(a));
     }
+
     public int[] Sorted(int a[]){
         int l = a.length;
-        for(int i =0 ; i < l ;i++){
-            for (int j = i ;j < l ;j++){
+        for(int i = 0; i < l ; i++){
+            for (int j = i; j < l ; j++){
                 int t;
                 if(a[i] > a[j]){
                     t = a[i];
@@ -21,12 +26,13 @@ public class BubbleSort {
         }
         return a;
     }
+
     public int[] SortedFast1(int a[]){//优化
         int l = a.length;
         boolean flag = true;
-        for(int i =0 ; i < l && flag ;i++){
+        for(int i =0 ; i < l && flag ; i++){
             flag = false;
-            for (int j = i ;j < l ;j++){
+            for (int j = i ; j < l ; j++){
                 int t;
                 if(a[i] > a[j]){
                     t = a[i];
@@ -52,8 +58,9 @@ public class BubbleSort {
         }
         return a;
     }
+
     public void print(int a[]){
-        for (int i = 0 ; i < a.length ;i++){
+        for (int i = 0; i < a.length ; i++){
             System.out.print(a[i]+"  ");
         }
     }
