@@ -38,6 +38,21 @@ public class BubbleSort {
         }
         return a;
     }
+    
+    public int[] SortedFast2(int[] a) {
+        int l = a.length;
+        for (int i = l - 1; i > 1; i--) {
+            for (int j = 0; j < i; j++) {
+                if (a[j] > a[j + 1]) {
+                    int t = a[i];
+                    a[i] = a[j];
+                    a[j] = t;
+                }
+            }
+        }
+        return a;
+    }
+    
     public void print(int a[]){
         for (int i = 0 ; i < a.length ;i++){
             System.out.print(a[i]+"  ");
